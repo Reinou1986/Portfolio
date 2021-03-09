@@ -34,27 +34,75 @@ h2{
   font-weight: normal;
   padding-top: 10px;
 }
-.navigationDiv{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #ddb6c6;
-}
-.navigationBar{
-  display: inline-block;
-  width: 33.3%;
-  margin: 0;
-  border: 0;
-  padding: 0;
-  text-align: center;
-  font-weight: bold;
-}
-a{
-  text-decoration: none;
+p{
   color: #484c7f;
 }
-a:hover{
-  color: white;
+td{
+  color: #484c7f;
+}
+.dropdown{
+  height: 5vh;
+  background: #ddb6c6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  position: fixed;
+}
+.projects{
+  position: relative;
+}
+.projects ul{
+  background: #e5d8eb;
+  padding: 0;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  list-style: none;
+  text-decoration: none;
+  border-radius: 30px;
+  opacity: 0;
+  pointer-events: all;
+  transform: translateY(-10px);
+  transition: all 0.4s ease;
+}
+.projects li,
+.contact li{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.projects li:hover{
+  background-color: #ac8daf;
+  border-radius: 50px;
+}
+.dropdown button,
+.link,
+.contact {
+  background: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: #484c7f;
+  font-weight: 900;
+}
+.dropdown button:hover,
+.home:hover,
+.contact:hover,
+.link:hover {
+  color: #fff5f5;
+}
+.projects button:focus + ul{
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0px);
 }
 .profileImg{
   filter: none;
@@ -74,4 +122,12 @@ a:hover{
   width: 5%;
   color: #ddb6c6;
   margin: 60px auto 40px auto;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding-top: 100px;
+  background-color: #f1d4d4;
+  text-align: center;
+  color: #484c7f;
 }
