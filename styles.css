@@ -12,6 +12,7 @@ body{
   text-align: center;
   padding-bottom: 100px;
   padding-top: 50px;
+  color: #484c7f;
 }
 .bottom-Container{
   background-color: #484c7f;
@@ -33,9 +34,6 @@ h2{
   color: #484c7f;
   font-weight: normal;
   padding-top: 10px;
-}
-p{
-  color: #484c7f;
 }
 td{
   color: #484c7f;
